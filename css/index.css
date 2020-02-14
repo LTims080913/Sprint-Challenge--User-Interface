@@ -48,7 +48,7 @@ table {
 
 * {
     box-sizing: border-box;
-    border: 1px solid gray;
+    /* border: 1px solid gray; */
 }
 
 html, body {
@@ -152,6 +152,7 @@ footer nav a {
 	justify-content: space-between;
 	align-items: center;
     width: 100%;
+    align-items: center;
 }
 
 .links {
@@ -165,7 +166,7 @@ footer nav a {
 }
 
 .links a{
-    	color: black;
+    color: black;
     text-decoration: none;
 }
 
@@ -208,4 +209,60 @@ footer nav a {
 
 .jumboabout{
     width: 100%;
+}
+
+.about{ 
+    margin: 3%;
+}
+
+.lm{
+	width: 35%;
+	padding-top: 3%;
+	padding-bottom: 3%;
+	text-align: center;
+    border-radius: 10px;
+    border-color: black;
+    background-color: white;
+    border-width: 2px;
+    margin-top: 3%;
+}
+   
+
+.sect0 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 3%;
+    
+}
+
+div .in-sect{
+    margin: 0 1% 0;
+    border-bottom: 1px dashed black;
+    padding-bottom: 20px;
+
+}
+
+.sect1{
+    margin: 3% 1%;
+}
+
+/* stretch goal */
+
+@keyframes fontshrinker{
+	0%{
+		font-size: 12px;
+	}
+	50%{
+		font-size: 6px;
+	}
+	100%{
+		font-size: 12px;
+    }
+}
+
+.lm:hover{
+    animation: fontshrinker 1s infinite;
+    background-color: black;
+    color: white;
 }
