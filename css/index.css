@@ -171,6 +171,7 @@ footer nav a {
 }
 
 .jumbo{
+    margin-top: 20px;
     width: 100%;
 }
 #b1{
@@ -208,6 +209,7 @@ footer nav a {
 /* styling About page */
 
 .jumboabout{
+    margin-top: 20px;
     width: 100%;
 }
 
