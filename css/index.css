@@ -18,7 +18,6 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -49,6 +48,7 @@ table {
 
 * {
     box-sizing: border-box;
+    /* border: 1px solid gray; */
 }
 
 html, body {
@@ -143,4 +143,128 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+/* styling navbar */
+
+.navbar{
+    display: flex;
+	justify-content: space-between;
+	align-items: center;
+    width: 100%;
+    align-items: center;
+}
+
+.links {
+
+    align-items: center;
+    margin-left: 2%;
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+	
+}
+
+.links a{
+    color: black;
+    text-decoration: none;
+}
+
+.jumbo{
+    margin: 20px 0;
+    width: 100%;
+}
+#b1{
+    background-color: teal;
+}
+#b2{
+    background-color: gold;
+}
+#b3{
+    background-color: cadetblue;
+}
+#b4{
+    background-color: coral;
+}
+#b5{
+    background-color: crimson;
+}
+#b6{
+    background-color: forestgreen;
+}
+#b7{
+    background-color: darkorchid;
+}
+#b8{
+    background-color: hotpink;
+}
+#b9{
+    background-color: indigo;
+}
+#b10{
+    background-color: dodgerblue;
+}
+
+
+/* styling About page */
+
+.jumboabout{
+    margin-top: 20px;
+    width: 100%;
+}
+
+.about{ 
+    margin: 3%;
+}
+
+.lm{
+	width: 35%;
+	padding-top: 3%;
+	padding-bottom: 3%;
+	text-align: center;
+    border-radius: 10px;
+    border-color: black;
+    background-color: white;
+    border-width: 2px;
+    margin-top: 3%;
+}
+   
+
+.sect0 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 3%;
+    
+}
+
+div .in-sect{
+    margin: 0 1% 0;
+    border-bottom: 1px dashed black;
+    padding-bottom: 20px;
+
+}
+
+.sect1{
+    margin: 3% 1%;
+}
+
+/* stretch goal */
+
+@keyframes fontshrinker{
+	0%{
+		font-size: 12px;
+	}
+	50%{
+		font-size: 6px;
+	}
+	100%{
+		font-size: 12px;
+    }
+}
+
+.lm:hover{
+    animation: fontshrinker 1s infinite;
+    background-color: black;
+    color: white;
 }
